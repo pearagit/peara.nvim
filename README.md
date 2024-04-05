@@ -1,47 +1,19 @@
-# A Neovim Plugin Template
+<div align="center">
+  <img src="https://raw.githubusercontent.com/pearag0n/pearanvim/main/doc/banner.gif">
+</div>
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ellisonleao/nvim-plugin-template/lint-test.yml?branch=main&style=for-the-badge)
-![Lua](https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua)
+<h1 align="center">
+    🍐 peara.nvim 
+</h1>
 
-A template repository for Neovim plugins.
+`peara.nvim` is derivation of [LazyVim](https://lazyvim.github.io). LazyVim offers convenience with a comprehensive set of configured plugins requiring minimal setup by abstracting it's internal complexity into `~/.local/share/nvim`, leaving it up to the user to disable or override anything undesired inside of `init.lua`. For those who prefer to have full knowledge and control of their config, this aspect of it is unattractive.  What `peara.nvim` aims to do is to see LazyVim not as a Neovim distribution to be used directly, but as a framework to build your editor.
 
-## Using it
+LazyVim organizes the disparate plugin ecosystem into "archetypes" (e.g. lsp, formatting, UI, etc) with internal modules stitching everything together. We can think of it as if they form a sewing machine that we use to join pieces of cloth together, forming our own editor. By extending functionality instead of replacing it, we can remain current with the upstream branch (save for breaking API changes) to benefit from the large community maintaining LazyVim.
 
-Via `gh`:
+## ⚡️ Requirements
 
-```
-$ gh repo create my-plugin -p ellisonleao/nvim-plugin-template
-```
-
-Via github web page:
-
-Click on `Use this template`
-
-![](https://docs.github.com/assets/cb-36544/images/help/repository/use-this-template-button.png)
-
-## Features and structure
-
-- 100% Lua
-- Github actions for:
-  - running tests using [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) and [busted](https://olivinelabs.com/busted/)
-  - check for formatting errors (Stylua)
-  - vimdocs autogeneration from README.md file
-  - luarocks release (LUAROCKS_API_KEY secret configuration required)
-
-### Plugin structure
-
-```
-.
-├── lua
-│   ├── plugin_name
-│   │   └── module.lua
-│   └── plugin_name.lua
-├── Makefile
-├── plugin
-│   └── plugin_name.lua
-├── README.md
-├── tests
-│   ├── minimal_init.lua
-│   └── plugin_name
-│       └── plugin_name_spec.lua
-```
+- Neovim >= **0.9.0** (needs to be built with **LuaJIT**)
+- Git >= **2.19.0** (for partial clones support)
+- a **C** compiler for `nvim-treesitter`. See [here](https://github.com/nvim-treesitter/nvim-treesitter#requirements)
+- [kitty](https://github.com/kovidgoyal/kitty) as your terminal emulator ***(optional)***
+- a [Nerd Font](https://www.nerdfonts.com/) ***(optional)***
