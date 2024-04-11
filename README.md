@@ -8,7 +8,7 @@
 
 `peara.nvim` is derivation of [LazyVim](https://lazyvim.github.io). LazyVim offers convenience with a comprehensive set of configured plugins requiring minimal setup by abstracting it's internal complexity into `~/.local/share/nvim`, leaving it up to the user to disable or override anything undesired inside of `init.lua`. For those who prefer to have full knowledge and control of their config, this aspect of it is unattractive.  What `peara.nvim` aims to do is to see LazyVim not as a Neovim distribution to be used directly, but as a framework to build your editor.
 
-LazyVim organizes the disparate plugin ecosystem into "archetypes" (e.g. lsp, formatting, UI, etc) with internal modules stitching everything together. We can think of it as if they form a sewing machine that we use to join pieces of cloth together, forming our own editor. By extending functionality instead of replacing it, we can remain current with the upstream branch (save for breaking API changes) to benefit from the large community maintaining LazyVim.
+LazyVim organizes the disparate plugin ecosystem into "archetypes" (e.g. lsp, formatting, UI, etc) with internal modules stitching everything together. We can think of it as if they form a sewing machine that we use to join pieces of cloth together, forming our own editor.
 
 ## ⚡️ Requirements
 

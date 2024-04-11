@@ -1,1 +1,9 @@
 vendor/plenary.nvim
+test/cache
+!test/cache/.keep
+test/data
+!test/data/.keep
+test/state
+!test/state/.keep
+lazy
+lazyvim
