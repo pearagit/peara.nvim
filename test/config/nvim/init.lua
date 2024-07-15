@@ -17,7 +17,7 @@ require('lazy').setup({
       dev = true,
       dir = '~/devel/projects/peara.nvim',
       dependencies = {
-        'LazyVim/LazyVim',
+        { 'LazyVim/LazyVim' },
       },
     },
     -- import any extras modules here

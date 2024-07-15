@@ -14,7 +14,6 @@ return {
     'echasnovski/mini.indentscope',
     opts = function(_, opts)
       vim.api.nvim_set_hl(0, 'MiniIndentscopeSymbol', { link = 'Type' })
-      vim.print(vim.inspect(opts))
       return opts
     end,
   },

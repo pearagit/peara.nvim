@@ -5,5 +5,3 @@ test/data
 !test/data/.keep
 test/state
 !test/state/.keep
-lazy
-lazyvim

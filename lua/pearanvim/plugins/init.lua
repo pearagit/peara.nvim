@@ -9,7 +9,6 @@ if vim.fn.has('nvim-0.9.0') == 0 then
 end
 
 require('lazyvim.config').init()
-print('peara.nvim plugin init')
 
 return {
   { 'folke/lazy.nvim', version = '*' },
