@@ -15,7 +15,7 @@ require('lazy').setup({
       'pearagit/peara.nvim',
       import = 'pearanvim.plugins',
       dev = true,
-      dir = '~/devel/projects/peara.nvim',
+      dir = '~/dev/projects/peara.nvim',
       dependencies = {
         { 'LazyVim/LazyVim' },
       },
@@ -30,7 +30,7 @@ require('lazy').setup({
   ---@diagnostic disable-next-line: assign-type-mismatch
   dev = {
     fallback = false,
-    path = '~/devel/projects',
+    path = '~/dev/projects',
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.

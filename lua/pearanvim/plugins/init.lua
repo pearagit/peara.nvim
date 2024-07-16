@@ -20,6 +20,6 @@ return {
     cond = true,
     version = '*',
     dev = true,
-    dir = '~/devel/projects/peara.nvim',
+    dir = '~/dev/projects/peara.nvim',
   },
 }
