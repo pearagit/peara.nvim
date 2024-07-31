@@ -1,18 +1,22 @@
----@class Config
----@field opt string Your config option
-local config = {
+-- stub file from template
+
+---@class opts
+---@field opt string Your opts option
+local opts = {
   opt = 'Hello!',
 }
 
 ---@class MyModule
 local M = {}
 
----@type Config
-M.config = config
+---@type opts
+M.opts = opts
 
----@param opts Config?
-M.setup = function(opts) M.config = vim.tbl_deep_extend('force', M.config, args or {}) end
+---@param opts opts?
+M.setup = function(opts)
+  M.opts = vim.tbl_deep_extend('force', M.opts, args or {})
+end
 
-M.hello = function() return module.my_first_function(M.config.opt) end
+-- M.hello = function() return module.my_first_function(M.opts.opt) end
 
 return M

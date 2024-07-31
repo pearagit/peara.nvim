@@ -5,12 +5,7 @@ vim.keymap.set('n', ';', ':', { desc = 'Enter Command Mode' })
 vim.keymap.set('n', '<c-->', '<cmd>split<cr>', { desc = 'Split Window' })
 vim.keymap.set('n', '<c-\\>', '<cmd>vsplit<cr>', { desc = 'Vertically Split Window' })
 
-vim.keymap.set(
-  'n',
-  '<leader>T',
-  '<cmd>vsplit><cr><cmd>terminal<cr>',
-  { desc = 'New Terminal Window' }
-)
+vim.keymap.set('n', '<leader>T', '<cmd>terminal<cr>', { desc = 'New Terminal Window' })
 
 vim.keymap.set('n', 'M', ':Man ', { desc = 'Open Man' })
 vim.keymap.set('c', '<c-p>', '<c-r>+', { desc = 'Command Mode Paste' })
